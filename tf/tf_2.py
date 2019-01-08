@@ -41,7 +41,7 @@ with tf.Session() as sess:
     [ 1.  1.  1.  0.  0.]
     '''
     
-    # tf.reduce( , axis) axis = 0 在第一维元素上取平均值，即每一列求平均值；axis = 1 在第二维元素上取平均值，即每一行求平均值
+    # tf.reduce_mean( , axis) axis = 0 在第一维元素上取平均值，即每一列求平均值；axis = 1 在第二维元素上取平均值，即每一行求平均值
     print(sess.run(tf.reduce_mean(c)))
     print(sess.run(tf.reduce_mean(c, 0)))
     print(sess.run(tf.reduce_mean(c, 1)))
